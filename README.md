@@ -128,7 +128,7 @@ GROUP BY operator
 ORDER BY percentage_delayed_batches DESC
 ```
 
-This distinction matters. Paul lost the most hours (95) because he ran the most batches. Linda had the highest delay rate (70.73%) on fewer batches. Those are different problems requiring different responses.
+This distinction matters. Paul lost the most hours (95) across the most downtime events (164). Linda had the highest delay rate (70.73%) on fewer batches. Those are different problems requiring different responses.
 
 Full query set: [`greentech-queries.sql`](greentech-queries.sql)
 
@@ -172,7 +172,7 @@ Three of the top four are process and supply issues, not operator behaviour.
 
 ### Product and operator patterns
 
-GreenFoam Hand Soap carried the most downtime of any product at 323 events, and the highest operational delay time at 191 hours. Eco-Cleaning Supplies as a category saw more downtime than Recyclable Packaging.
+GreenFoam Hand Soap carried the most downtime of any product at 323 events, and the highest operational delay time at 191 hours.
 
 Paul, James and Emily lost the most total time (95, 82 and 66 hours). Linda, Sophia and Rita had the highest proportion of their own batches delayed (70.73%, 65.00%, 63.41%).
 
@@ -192,7 +192,7 @@ Across the six months, there were 51 days on which an operator ran two or more d
 
 **Address raw material shortage directly.** It is the second most frequent cause at 77 events. Real-time inventory tracking with automated low-stock alerts would remove a recurring stoppage.
 
-**Schedule preventive maintenance on high-downtime machines.** Machine breakdown accounts for 75 events and is largely predictable.
+**Schedule preventive maintenance on high-downtime machines.** Machine breakdown accounts for 75 events, which preventive maintenance scheduling is designed to reduce.
 
 **Review concurrent product scheduling.** 51 days involved operators running multiple products, covering 109 batches. Whether overlap raises downtime relative to single-product days is worth testing directly before changing sequencing rules.
 
