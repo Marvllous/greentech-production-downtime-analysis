@@ -217,11 +217,18 @@ Across the six months, there were 51 days on which an operator ran two or more d
 
 ---
 
+## Running this yourself
+
+The raw data is included as a SQL Server backup. Restore `greentech-raw-data.bak` in SQL Server Management Studio, then run `greentech-queries.sql` against it. The queries create two views (`downtimes` and `batch_pd`) that the rest of the analysis depends on, so run them in order.
+
+---
+
 ## Files
 
 | File | Description |
 |---|---|
 | `greentech-queries.sql` | Full query set: assessment, cleaning, transformation and analysis |
+| `greentech-raw-data.bak` | SQL Server database backup, restore to run the queries |
 | `greentech-dashboard.pbix` | Power BI dashboard, three pages |
 | `greentech-presentation.pdf` | Findings and recommendations deck |
 | `factor-overview.png` | Dashboard page 1 |
