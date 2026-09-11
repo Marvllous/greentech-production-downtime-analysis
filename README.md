@@ -20,7 +20,7 @@ The working assumption inside the business was that operator error and manual sc
 
 ## Objectives
 
-- Restructure the downtime data into an analysable format
+- Restructure the downtime data into a format that can be grouped and joined
 - Identify the dominant causes of downtime by frequency and duration
 - Separate operator-caused downtime from systemic causes
 - Analyse downtime by product and by operator
