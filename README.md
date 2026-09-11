@@ -231,6 +231,7 @@ The raw data is included as a SQL Server backup. Restore `greentech-raw-data.bak
 | `greentech-raw-data.bak` | SQL Server database backup, restore to run the queries |
 | `greentech-dashboard.pbix` | Power BI dashboard, three pages |
 | `greentech-presentation.pdf` | Findings and recommendations deck |
+| `greentech-presentation.pptx` | Presentation deck, editable |
 | `factor-overview.png` | Dashboard page 1 |
 | `duration-analysis.png` | Dashboard page 2 |
 | `operator-scheduling.png` | Dashboard page 3 |
